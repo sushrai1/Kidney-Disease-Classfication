@@ -1,0 +1,4 @@
+[2025-06-04 22:29:17,807: INFO: __init__: Welcome to custom log]
+[2025-06-04 23:19:45,065: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-06-04 23:19:45,118: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-04 23:19:45,120: INFO: common: created directory at: artifacts]
