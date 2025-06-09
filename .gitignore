@@ -6,3 +6,6 @@ __MACOSX/
 *.zip
 artifacts/
 artifacts/
+*.pyc
+__pycache__/
+*.DS_Store
