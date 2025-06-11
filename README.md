@@ -1,61 +1,123 @@
-## 🩺 Kidney Disease Classification - MLflow & DVC
+# 🧠 Kidney Disease Classification
 
-### 🚀 Setup Instructions (Completed Steps)
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/sushrai1/Kidney-Disease-Classfication.git
-cd Kidney-Disease-Classfication
-
-# 2. Create and activate conda environment
-conda create -n kidney310 python=3.10 -y
-conda activate kidney310
-
-# 3. Install project requirements
-pip install -r requirements.txt
-```
-Absolutely! Here’s the entire section all in one go, ready for you to copy-paste into your README:
-
-## Workflows
-
-1. Update `config.yaml`  
-2. Update `secrets.yaml`  
-3. [Optional] Update `params.yaml`  
-4. Update the entity configurations  
-5. Update the configuration manager in `src/config`  
-6. Update the components  
-7. Update the pipeline  
-8. Update `main.py`  
-9. Update `dvc.yaml`  
+A deep learning-based project to classify kidney CT scans as either **Normal** or **Tumor**, built using TensorFlow/Keras, Flask, and deployed with MLflow and DVC.
 
 ---
 
-## How to Run?
+## 📁 Project Structure
 
-### STEPS:
+```
+.
+├── app.py                         # Flask web app for prediction
+├── config                         # Configuration files
+├── dvc.yaml                       # DVC pipeline definition
+├── dvc.lock                       # DVC stage locks
+├── requirements.txt              # Python dependencies
+├── src
+│   └── cnnClassifier
+│       ├── components            # Model building, training, evaluation
+│       ├── config                # Data classes for config schema
+│       ├── constants             # Path and constants used
+│       ├── pipeline              # Pipeline scripts for all stages
+│       └── utils                 # Utility functions
+├── templates
+│   └── index.html                # Frontend HTML form
+├── artifacts                     # Model, logs, ingested data
+└── static                        # Uploaded images (if any)
+```
 
-1. **Clone the repository**
+---
+
+## 🚀 How to Run
+
+### 🔧 1. Setup Environment
 
 ```bash
-git clone https://github.com/sushrai1/Kidney-Disease-Classfication.git
+conda create -n kidney310 python=3.8 -y
+conda activate kidney310
+pip install -r requirements.txt
+```
 
-⸻
+### 📂 2. Prepare Data
 
-Data Ingestion & MLflow Logging Workflow
-	1.	Data Ingestion
-	•	Load raw dataset
-	•	Basic preprocessing (handle missing values)
-	•	Save processed dataset
-	2.	MLflow Logging
-	•	Start MLflow run
-	•	Log parameters (number of rows, columns)
-	•	Log processed dataset as artifact
-	•	End MLflow run
-	3.	Run pipeline
-	•	Execute python data_ingestion.py to perform above steps
-	4.	Visualization
-	•	Use MLflow UI to track and inspect runs
+Place your **kidney CT scan images** in the format:
 
-⸻
+```
+data/
+├── Tumor/
+├── Normal/
+```
 
-This setup ensures reproducibility and traceability of your data processing pipeline before model training.
+Then, configure paths inside `config/config.yaml`.
+
+---
+
+### ⚙️ 3. Run Pipeline
+
+```bash
+python main.py
+```
+
+Or use DVC (after `.dvc` is set up):
+
+```bash
+dvc repro
+```
+
+---
+
+### 🌐 4. Start Web App
+
+```bash
+python app.py
+```
+
+Then open [http://localhost:8080](http://localhost:8080) in your browser to upload and classify images.
+
+---
+
+## 📊 MLflow Tracking
+
+Model metrics (accuracy/loss) and saved versions are logged to:
+
+```
+https://dagshub.com/sushrai1/Kidney-Disease-Classfication.mlflow
+```
+
+---
+
+## 🧪 Example Prediction
+
+Upload an image on the UI and get instant prediction:  
+**Normal** or **Tumor** with backend probability logged in terminal.
+
+---
+
+## 👨‍💻 Author
+
+**Sushrai Anumala**  
+Tier-3 B.Tech AI/ML student at KITS Warangal  
+🔗 GitHub: [sushrai1](https://github.com/sushrai1)
+
+---
+
+## 🛠 Tech Stack
+
+- TensorFlow / Keras
+- Flask
+- DVC
+- MLflow (with DAGsHub)
+- Python 3.8
+- Bootstrap UI
+
+---
+
+## ✅ TODO
+
+- [x] Prepare base model
+- [x] Train model
+- [x] Log to MLflow
+- [x] Predict from Flask app
+- [ ] Add Dockerfile
+- [ ] Deploy to cloud (Heroku or Render)
+remove red ones 
