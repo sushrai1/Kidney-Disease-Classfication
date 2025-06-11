@@ -6,7 +6,7 @@ import os
 class PredictionPipeline:
     def __init__(self, filename):
         self.filename = filename
-        self.model = load_model(os.path.join("artifacts", "training", "trained_model.h5"))
+        self.model = load_model(os.path.join("model", "trained_model.h5"))
 
     def predict(self):
         # Preprocess the input image
