@@ -1,0 +1,19 @@
+# Ignore system files
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore OS-specific artifacts
+Thumbs.db
+ehthumbs.db
+
+# Ignore Git and IDE stuff
+.git/
+.vscode/
+.idea/
+
+# Ignore DVC outputs and logs
+artifacts/
+logs/
