@@ -15,5 +15,5 @@ ehthumbs.db
 .idea/
 
 # Ignore DVC outputs and logs
-artifacts/
+# artifacts/
 logs/

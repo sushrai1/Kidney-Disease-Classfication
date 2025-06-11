@@ -688,3 +688,127 @@ x==========x]
 [2025-06-10 23:38:04,088: INFO: main: >>>>> stage Model Evaluation Stage completed <<<<<
 
 x==========x]
+[2025-06-11 13:25:01,077: INFO: __init__: Welcome to custom log]
+[2025-06-11 13:25:01,381: INFO: stage_01_data_ingestion: >>>>> stage Data Ingestion stage started <<<<<]
+[2025-06-11 13:25:01,382: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-06-11 13:25:01,383: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-11 13:25:01,383: INFO: common: created directory at: artifacts]
+[2025-06-11 13:25:01,383: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-06-11 13:25:01,383: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1wqlI7hsen8Q7wpjzs3pUeGlDZKqci4W-/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-06-11 13:29:20,456: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1wqlI7hsen8Q7wpjzs3pUeGlDZKqci4W-/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-06-11 13:29:31,808: INFO: stage_01_data_ingestion: >>>>> stage Data Ingestion stage completed <<<<<
+
+x==========x]
+[2025-06-11 13:29:51,321: INFO: __init__: Welcome to custom log]
+[2025-06-11 13:30:06,975: INFO: stage_02_prepare_base_model: ***********]
+[2025-06-11 13:30:06,975: INFO: stage_02_prepare_base_model: Prepare Base Model Stage started]
+[2025-06-11 13:30:06,977: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-06-11 13:30:06,978: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-11 13:30:06,978: INFO: common: created directory at: artifacts]
+[2025-06-11 13:30:06,978: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-06-11 13:30:07,675: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-06-11 13:30:07,774: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.]
+[2025-06-11 13:30:07,777: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.Adam`.]
+[2025-06-11 13:30:07,854: INFO: stage_02_prepare_base_model: Prepare Base Model Stage completed]
+[2025-06-11 13:36:38,790: INFO: __init__: Welcome to custom log]
+[2025-06-11 13:36:42,634: INFO: stage_03_model_training: ***********]
+[2025-06-11 13:36:42,634: INFO: stage_03_model_training: Model Training Stage started]
+[2025-06-11 13:36:42,636: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-06-11 13:36:42,637: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-11 13:36:42,637: INFO: common: created directory at: artifacts]
+[2025-06-11 13:36:42,637: INFO: common: created directory at: artifacts/training]
+[2025-06-11 13:56:08,609: INFO: stage_03_model_training: Model Training Stage completed]
+[2025-06-11 13:56:12,196: INFO: __init__: Welcome to custom log]
+[2025-06-11 13:56:17,685: INFO: stage_04_model_evaluation_with_mlflow: >>>>>>>>>> stage Evaluation Stage started <<<<<<<<]
+[2025-06-11 13:56:17,687: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-06-11 13:56:17,688: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-06-11 13:56:17,688: INFO: common: created directory at: artifacts]
+[2025-06-11 13:57:49,260: INFO: common: json file saved at: scores.json]
+[2025-06-11 13:57:49,261: INFO: stage_04_model_evaluation_with_mlflow: >>>>>>>>>> stage Evaluation Stage completed <<<<<<<<]
+[2025-06-11 18:22:24,181: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000]
+[2025-06-11 18:22:24,182: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-06-11 18:22:24,183: INFO: _internal:  * Restarting with stat]
+[2025-06-11 18:22:26,853: WARNING: _internal:  * Debugger is active!]
+[2025-06-11 18:22:26,866: INFO: _internal:  * Debugger PIN: 212-791-526]
+[2025-06-11 18:22:55,676: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:22:55] "GET / HTTP/1.1" 200 -]
+[2025-06-11 18:22:55,753: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:22:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-06-11 18:23:15,360: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:23:15] "POST /predict HTTP/1.1" 200 -]
+[2025-06-11 18:23:26,811: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:23:26] "POST /predict HTTP/1.1" 200 -]
+[2025-06-11 18:23:36,847: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:23:36] "POST /predict HTTP/1.1" 200 -]
+[2025-06-11 18:26:03,906: INFO: _internal:  * Detected change in '/Users/sushraireddy/Desktop/Kidney-Disease-Classfication/Kidney-Disease-Classfication/app.py', reloading]
+[2025-06-11 18:26:04,612: INFO: _internal:  * Restarting with stat]
+[2025-06-11 18:26:05,109: INFO: __init__: Welcome to custom log]
+[2025-06-11 18:28:47,699: INFO: __init__: Welcome to custom log]
+[2025-06-11 18:32:47,648: INFO: __init__: Welcome to custom log]
+[2025-06-11 18:32:51,419: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.29.72:8080]
+[2025-06-11 18:32:51,419: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-06-11 18:33:12,985: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:33:12] "GET / HTTP/1.1" 200 -]
+[2025-06-11 18:33:26,037: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/sushraireddy/Desktop/Kidney-Disease-Classfication/kidney310/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/sushraireddy/Desktop/Kidney-Disease-Classfication/kidney310/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/sushraireddy/Desktop/Kidney-Disease-Classfication/kidney310/lib/python3.8/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/sushraireddy/Desktop/Kidney-Disease-Classfication/kidney310/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/sushraireddy/Desktop/Kidney-Disease-Classfication/kidney310/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/sushraireddy/Desktop/Kidney-Disease-Classfication/kidney310/lib/python3.8/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 43, in predictRoute
+    decodeImage(image, clApp.filename)
+NameError: name 'decodeImage' is not defined
+[2025-06-11 18:33:26,044: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:33:26] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-06-11 18:36:50,699: INFO: __init__: Welcome to custom log]
+[2025-06-11 18:36:54,545: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.29.72:8080]
+[2025-06-11 18:36:54,545: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-06-11 18:37:06,862: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:37:06] "GET / HTTP/1.1" 200 -]
+[2025-06-11 18:37:14,658: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:37:14] "POST /predict HTTP/1.1" 200 -]
+[2025-06-11 18:37:26,024: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:37:26] "GET / HTTP/1.1" 200 -]
+[2025-06-11 18:37:33,799: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:37:33] "POST /predict HTTP/1.1" 200 -]
+[2025-06-11 18:37:50,137: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:37:50] "POST /predict HTTP/1.1" 200 -]
+[2025-06-11 18:37:52,098: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:37:52] "POST /predict HTTP/1.1" 200 -]
+[2025-06-11 18:37:58,806: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x16cbff790> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-06-11 18:37:58,808: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:37:58] "POST /predict HTTP/1.1" 200 -]
+[2025-06-11 18:38:07,405: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x16cbff790> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2025-06-11 18:38:07,408: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:38:07] "POST /predict HTTP/1.1" 200 -]
+[2025-06-11 18:38:47,909: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:38:47] "GET / HTTP/1.1" 200 -]
+[2025-06-11 18:38:57,371: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:38:57] "POST /predict HTTP/1.1" 200 -]
+[2025-06-11 18:39:00,618: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:39:00] "GET / HTTP/1.1" 200 -]
+[2025-06-11 18:39:07,774: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:39:07] "POST /predict HTTP/1.1" 200 -]
+[2025-06-11 18:41:48,255: INFO: __init__: Welcome to custom log]
+[2025-06-11 18:41:52,023: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.29.72:8080]
+[2025-06-11 18:41:52,024: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-06-11 18:41:53,377: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:41:53] "GET / HTTP/1.1" 200 -]
+[2025-06-11 18:41:54,378: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:41:54] "GET / HTTP/1.1" 200 -]
+[2025-06-11 18:41:54,776: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:41:54] "GET / HTTP/1.1" 200 -]
+[2025-06-11 18:42:07,998: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:42:07] "POST /predict HTTP/1.1" 200 -]
+[2025-06-11 18:42:10,898: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:42:10] "GET / HTTP/1.1" 200 -]
+[2025-06-11 18:42:27,866: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:42:27] "POST /predict HTTP/1.1" 200 -]
+[2025-06-11 18:42:30,578: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:42:30] "GET / HTTP/1.1" 200 -]
+[2025-06-11 18:42:36,499: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:42:36] "POST /predict HTTP/1.1" 200 -]
+[2025-06-11 18:42:44,319: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:42:44] "POST /predict HTTP/1.1" 200 -]
+[2025-06-11 18:52:37,310: INFO: __init__: Welcome to custom log]
+[2025-06-11 18:52:41,647: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.29.72:8080]
+[2025-06-11 18:52:41,647: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-06-11 18:52:41,699: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:52:41] "GET / HTTP/1.1" 200 -]
+[2025-06-11 18:52:48,693: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:52:48] "POST /predict HTTP/1.1" 200 -]
+[2025-06-11 18:52:51,012: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:52:51] "GET / HTTP/1.1" 200 -]
+[2025-06-11 18:53:03,954: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:53:03] "POST /predict HTTP/1.1" 200 -]
+[2025-06-11 18:53:05,682: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:53:05] "GET / HTTP/1.1" 200 -]
+[2025-06-11 18:53:13,609: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:53:13] "POST /predict HTTP/1.1" 200 -]
