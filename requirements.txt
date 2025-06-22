@@ -15,3 +15,6 @@ scipy
 Flask
 Flask-Cors
 gdown
+gunicorn
+pydantic>=2.0.0
+typing-extensions>=4.6.0,!=4.7.0

@@ -812,3 +812,12 @@ NameError: name 'decodeImage' is not defined
 [2025-06-11 18:53:03,954: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:53:03] "POST /predict HTTP/1.1" 200 -]
 [2025-06-11 18:53:05,682: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:53:05] "GET / HTTP/1.1" 200 -]
 [2025-06-11 18:53:13,609: INFO: _internal: 127.0.0.1 - - [11/Jun/2025 18:53:13] "POST /predict HTTP/1.1" 200 -]
+[2025-06-12 17:32:04,923: INFO: __init__: Welcome to custom log]
+[2025-06-12 17:32:22,066: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.29.72:8080]
+[2025-06-12 17:32:22,066: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-06-12 17:32:37,541: INFO: _internal: 127.0.0.1 - - [12/Jun/2025 17:32:37] "GET / HTTP/1.1" 200 -]
+[2025-06-12 17:32:45,491: INFO: _internal: 127.0.0.1 - - [12/Jun/2025 17:32:45] "POST /predict HTTP/1.1" 200 -]
+[2025-06-12 17:32:56,648: INFO: _internal: 127.0.0.1 - - [12/Jun/2025 17:32:56] "POST /predict HTTP/1.1" 200 -]
