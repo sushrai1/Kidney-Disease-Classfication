@@ -110,14 +110,3 @@ Tier-3 B.Tech AI/ML student at KITS Warangal
 - Python 3.8
 - Bootstrap UI
 
----
-
-## ✅ TODO
-
-- [x] Prepare base model
-- [x] Train model
-- [x] Log to MLflow
-- [x] Predict from Flask app
-- [ ] Add Dockerfile
-- [ ] Deploy to cloud (Heroku or Render)
-remove red ones 
